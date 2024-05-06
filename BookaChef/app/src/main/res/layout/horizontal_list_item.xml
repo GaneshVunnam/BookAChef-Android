@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- horizontal_list_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/list_bg"
+    android:elevation="5dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/eventImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event_image_placeholder"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: January 1, 2024"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: 10:00 AM"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/venueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venue: Some Venue"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/bookNowButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Book Now"
+                android:layout_margin="0dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Add "Book Now" button -->
+
+
+</LinearLayout>

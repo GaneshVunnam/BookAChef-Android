@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_order.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/list_bg"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/venueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/mealTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/numberOfGuestsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Guests"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/selectedCuisineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Cuisine"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/selectedDishTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Dish"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/selectedCategoriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Categories"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/gstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GST (18%)"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price (incl. GST)"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dietaryRestrictionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary Restrictions"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"/>
+
+    <!-- Add a button for Pay Now -->
+    <Button
+        android:id="@+id/payNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Pay Now"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

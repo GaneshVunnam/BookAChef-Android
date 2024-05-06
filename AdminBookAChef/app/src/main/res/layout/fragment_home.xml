@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Upcoming Events"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Title"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Time"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextVenue"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Venue"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextImageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Image URL"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/buttonAddEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Event"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Special Occasions"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/editTextTitleso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Title"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextDateso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextTimeso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Time"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextVenueso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Venue"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextImageUrlso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Image URL"
+                android:background="@drawable/list_bg"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/buttonAddEventso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Event"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

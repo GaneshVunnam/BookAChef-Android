@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="5dp"
+        android:id="@+id/backButton"
+        android:layout_margin="16dp"/>
+
+    <!-- Title for Select Cuisine -->
+    <TextView
+        android:id="@+id/selectCuisineTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Cuisine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"/>
+
+    <!-- Cuisine Spinner -->
+    <Spinner
+        android:id="@+id/cuisineSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/selectCuisineTitleTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/list_bg"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <!-- Title for Select Dishes -->
+    <TextView
+        android:id="@+id/selectDishesTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cuisineSpinner"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <!-- Dishes Container -->
+    <LinearLayout
+        android:id="@+id/dishBoxesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/selectDishesTitleTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+       android:visibility="gone">
+
+        <!-- Add Spinner for selecting dishes -->
+        <Spinner
+            android:id="@+id/dishSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/list_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- Title for Select Categories -->
+    <TextView
+        android:id="@+id/selectCategoriesTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Dishes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/dishBoxesContainer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <!-- Categories Container -->
+    <LinearLayout
+        android:id="@+id/categoryBoxesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/selectCategoriesTitleTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone">
+
+        <!-- Add checkboxes for categories -->
+        <CheckBox
+            android:id="@+id/categoryCheckBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category 1"
+            android:background="@drawable/list_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+
+        <!-- Add more checkboxes dynamically based on data from Firebase -->
+
+    </LinearLayout>
+
+    <!-- Dietary Restrictions MaterialEditText -->
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/dietaryRestrictionsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/categoryBoxesContainer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Any dietary restrictions?"
+        android:background="@drawable/list_bg"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/categoryBoxesContainer" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dietaryRestrictionsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Next"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: The Total price will be multiplied by the Num of Guests."
+        android:layout_below="@id/nextButton1"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_light"/>
+
+</RelativeLayout>

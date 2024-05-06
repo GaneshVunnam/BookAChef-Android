@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Circular profile image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/edit"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+<!--Textview-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImageView"
+        android:id="@+id/username"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Username"/>
+
+    <!-- Edit Profile button -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+    <!-- Logout button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/editProfileButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

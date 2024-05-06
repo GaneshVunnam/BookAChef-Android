@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "931290184939",
+    "project_id": "bookachef-b804f",
+    "storage_bucket": "bookachef-b804f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931290184939:android:d44431884fdbc48889d2ae",
+        "android_client_info": {
+          "package_name": "com.adminbookachef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvDs5aVvwUPZtunEfhTO3tTGbi9DATRKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931290184939:android:19297e6f9c2347ac89d2ae",
+        "android_client_info": {
+          "package_name": "com.bookachef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvDs5aVvwUPZtunEfhTO3tTGbi9DATRKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931290184939:android:f7ef60bf2b52807289d2ae",
+        "android_client_info": {
+          "package_name": "com.chefapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvDs5aVvwUPZtunEfhTO3tTGbi9DATRKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

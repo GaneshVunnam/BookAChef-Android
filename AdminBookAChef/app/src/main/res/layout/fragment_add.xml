@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.AddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextCuisineName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Cuisine Name"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+
+        <EditText
+            android:id="@+id/dish"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Dish Name"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/catname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Category Name"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/catprice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Category Price"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonAddCuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerCuisine"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextDishName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Dish Name"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonAddDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Dish"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerCuisine1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDish"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Category Name"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextCategoryPrice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Category Price"
+            android:background="@drawable/list_bg"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonAddCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Category"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

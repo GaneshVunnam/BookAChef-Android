@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/backButton" />
+
+    <!-- Title for Confirm Booking -->
+    <TextView
+        android:id="@+id/confirmBookingTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+         
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/orange"/>
+
+    <!-- Venue -->
+    <TextView
+        android:id="@+id/venueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue: "
+        android:textSize="16sp"
+        android:layout_below="@id/confirmBookingTitleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        
+        android:textColor="@color/black"/>
+
+    <!-- Number of Guests -->
+    <TextView
+        android:id="@+id/numberOfGuestsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Guests: "
+        android:textSize="16sp"
+        android:layout_below="@id/venueTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Meal -->
+    <TextView
+        android:id="@+id/mealTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal: "
+        android:textSize="16sp"
+        android:layout_below="@id/numberOfGuestsTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Date -->
+
+    <!-- Selected Cuisine -->
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Date: "
+        android:textSize="16sp"
+         
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/selectedCuisineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Cuisine: "
+        android:textSize="16sp"
+        android:layout_below="@id/dateTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Selected Dish -->
+    <TextView
+        android:id="@+id/selectedDishTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Category: "
+        android:textSize="16sp"
+        android:layout_below="@id/selectedCuisineTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Selected Categories -->
+    <TextView
+        android:id="@+id/selectedCategoriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Dishes: "
+        android:textSize="16sp"
+        android:layout_below="@id/selectedDishTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Selected Categories -->
+    <TextView
+        android:id="@+id/selectedDietaryrestrictionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary Restriction: "
+        android:textSize="16sp"
+        android:layout_below="@id/selectedCategoriesTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="16sp"
+        android:layout_below="@id/selectedDietaryrestrictionTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- GST -->
+    <TextView
+        android:id="@+id/gstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GST (18%): "
+        android:textSize="16sp"
+        android:layout_below="@id/priceTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: "
+        android:textSize="16sp"
+        android:layout_below="@id/gstTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+         
+        android:textColor="@color/black"/>
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/confirmBookingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+     />
+
+</RelativeLayout>

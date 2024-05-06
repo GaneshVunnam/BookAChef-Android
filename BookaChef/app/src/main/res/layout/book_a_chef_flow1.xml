@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="5dp"
+                android:id="@+id/backButton"/>
+
+            <!-- New Title -->
+            <TextView
+                android:id="@+id/newTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book A Chef"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black" />
+
+            <!-- Options -->
+            <LinearLayout
+                android:id="@+id/optionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/newTitleTextView">
+
+                <!-- Option 1: Venue -->
+                <TextView
+                    android:id="@+id/venueLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Dietary Restrictions MaterialEditText -->
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/PlaceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/venueLabelTextView"
+                    android:hint="Enter Place"
+                    android:background="@drawable/list_bg"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:paddingStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/categoryBoxesContainer" />
+
+                <!-- Option 2: Number of Guests -->
+                <TextView
+                    android:id="@+id/guestsLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Guests"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/decreaseGuestsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/guestsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/increaseGuestsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+                <!-- Option 3: Meal -->
+                <TextView
+                    android:id="@+id/mealLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/mealSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/list_bg"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Option 4: Date and Time -->
+                <TextView
+                    android:id="@+id/dateLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView to display selected date -->
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Select Date"
+                    android:paddingStart="8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/list_bg"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+
+                <!-- DatePicker for selecting date -->
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
